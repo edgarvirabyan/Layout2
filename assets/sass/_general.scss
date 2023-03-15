@@ -1,0 +1,668 @@
+header {
+	position: relative;
+	height: 50px;
+	width: 100%;
+
+}
+
+// nav
+
+
+nav {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	min-height: 50px;
+	background-color: #212121;
+
+	.hamburger {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+		margin: 0;
+		justify-content: space-between;
+		padding: 13px 70px;
+		list-style-type: none;
+
+		&_item {
+			border-right: 2px dotted black;
+			padding-right: 48px;
+
+			&:last-child {
+				padding-right: 0;
+				border-right: none;
+			}
+		}
+
+		&_link {
+			font-weight: 300;
+			font-size: 15px;
+			color: #FFFFFF;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+				color: #FFFFFF;
+
+			}
+		}
+	}
+}
+
+// subheader
+
+
+.subheader {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	height: 84px;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	.logo {
+		width: 285px;
+		margin-top: 16px;
+
+		&_descr {
+			font-weight: 100;
+			font-size: 13px;
+			color: #FFFFFF;
+			margin-top: 6px;
+		}
+
+		a {
+			display: block;
+			height: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+
+	}
+
+
+	.phone {
+		margin-left: 140px;
+		margin-top: 21px;
+		width: 158px;
+
+		&_call {
+
+			width: 158px;
+			font-weight: 300;
+			font-size: 12px;
+			color: #FFFFFF;
+			margin-left: 22px;
+		}
+
+		&_number {
+			width: 100%;
+			margin-top: 12px;
+			font-weight: 400;
+			font-size: 22px;
+			color: #FFFFFF;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+
+	}
+
+	&_btn {
+		margin-top: 20px;
+		border: none;
+		width: 172px;
+		height: 46px;
+		background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+		border-radius: 4px;
+		font-weight: 400;
+		font-size: 14px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+
+		&:hover {
+			background: linear-gradient(0deg, #227db3 0%, #4CE2FF 100%);
+		}
+	}
+}
+
+// promo
+
+.promo {
+	width: 100%;
+
+	min-height: 800px;
+	background: url('../images/backgrounds/uber_bg.jpg') center center/cover no-repeat;
+	padding: 141px 0 185px 0;
+
+	&_title {
+		text-align: center;
+		font-weight: 900;
+		font-size: 60px;
+		color: #FFFFFF;
+	}
+
+	&_subtitle {
+		text-align: center;
+		font-weight: 700;
+		font-size: 36px;
+		color: #FFFFFF;
+	}
+
+	&_descr {
+		margin: 0 auto;
+		margin-top: 16px;
+		width: 985px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+		color: #FFFFFF;
+		text-align: center;
+	}
+
+	&_btn {
+		display: block;
+		margin: 0 auto;
+		margin-top: 115px;
+		width: 259px;
+		height: 63px;
+		background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%);
+		box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+		border-radius: 4px;
+		border: none;
+		font-weight: 400;
+		font-size: 18px;
+		color: #FFFFFF;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+		text-transform: uppercase;
+
+		&:hover {
+			background: linear-gradient(0deg, #227db3 0%, #4CE2FF 100%);
+		}
+	}
+
+
+}
+
+// advantages
+
+.advantages {
+	width: 100%;
+
+	min-height: 850px;
+	padding: 18px 0 64px 0;
+
+	&_label {
+		@include labelBlack;
+	}
+
+	&_title {
+		@include titleBlack;
+		margin-top: 32px;
+	}
+}
+
+.subjectWrapper {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 512px;
+	min-height: 155px;
+	margin-top: 28px;
+
+	&_circle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 116px;
+		height: 116px;
+		border-radius: 100%;
+		background-color: $main-color;
+	}
+
+	&_text {
+		// height: 150px;
+		margin-left: 25px;
+		width: 371px;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 21px;
+		color: #202020;
+	}
+
+	span {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 21px;
+		color: $main-color;
+	}
+}
+
+// uberApp
+
+.uberApp {
+	width: 100%;
+	min-height: 864px;
+	background: url(../images/backgrounds/cardsBg.jpg) center center/cover no-repeat;
+	padding: 48px 0 80px 0;
+
+	&_label {
+		@include labelBlack;
+		padding: 6px 15px;
+	}
+
+	&_title {
+		@include titleBlack;
+		margin-top: 32px;
+	}
+
+	.subtitle {
+		@include subtitleBlack;
+		margin-bottom: 30px;
+	}
+
+}
+
+.card1 {
+	background: url('../images/cards/card1.jpg') center center/cover no-repeat;
+}
+
+.card2 {
+	background: url('../images/cards/card2.jpg') center center/cover no-repeat;
+}
+
+.card3 {
+	background: url('../images/cards/card3.jpg') center center/cover no-repeat;
+}
+
+.card4 {
+	background: url('../images/cards/card4.jpg') center center/cover no-repeat;
+}
+
+.card5 {
+	background: url('../images/cards/card5.jpg') center center/cover no-repeat;
+}
+
+.card6 {
+	background: url('../images/cards/card6.jpg') center center/cover no-repeat;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+	position: relative;
+	padding: 85px 0 34px 0;
+	margin: 0 auto 20px;
+	width: 320px;
+	height: 280px;
+
+
+	.card_descr {
+		font-size: 24px;
+		line-height: 31px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	.plus {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 34px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background-color: #000;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 14px;
+			height: 2px;
+			background-color: $main-color;
+			transition: 0.3s all
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 2px;
+			height: 14px;
+			background-color: $main-color;
+			transition: 0.3s all
+		}
+
+		&:hover {
+
+			&::before,
+			&::after {
+				background-color: red;
+			}
+		}
+	}
+}
+
+// choice
+.choice {
+	width: 100%;
+
+	position: relative;
+	min-height: 900px;
+	padding: 57px 0 138px 0;
+	background: url('../images/backgrounds/carBg.jpg') center center/cover no-repeat;
+
+	.label {
+		@include labelWhite;
+		padding: 6px 16px;
+	}
+
+	.title {
+		@include titleWhite;
+		margin-top: 26px;
+	}
+
+	.subtitle {
+		@include subtitleWhite;
+	}
+
+	&_car {
+		margin: 0 auto;
+		position: relative;
+		top: 36px;
+		width: 760px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&_descr {
+		margin: 0 auto;
+		width: 327px;
+		font-weight: 300;
+		font-size: 17px;
+		color: #222222;
+		text-align: center;
+	}
+}
+
+
+
+// proviso
+.proviso {
+	width: 100%;
+	min-height: 918px;
+	padding: 66px 0 88px 0;
+
+	.label {
+		@include labelBlack;
+		padding: 6px 15px;
+	}
+
+	.title {
+		@include titleBlack;
+		margin-top: 27px;
+	}
+
+	&_wrapper {
+		margin-top: 35px;
+		min-width: 500px;
+
+		&_mt60 {
+			margin-top: 60px;
+		}
+
+		.proviso_title {
+			font-weight: 400;
+			font-size: 22px;
+			color: $main-color;
+
+			&_red {
+				color: #FF5656;
+			}
+		}
+	}
+
+	&_content {
+		margin-top: 10px;
+		min-width: 465px;
+
+		.proviso_item {
+			display: flex;
+			padding-left: 15px;
+			width: 100%;
+		}
+
+		.proviso_icon {
+			// margin-top: 0;
+			width: 20px;
+			height: 20px;
+		}
+
+		.proviso_descr {
+			margin-left: 6px;
+			width: 452px;
+			font-weight: 300;
+			font-size: 17px;
+			color: #222222;
+		}
+
+
+	}
+
+	.proviso_profit {
+		width: 480px;
+		margin-top: 16px;
+		font-weight: 300;
+		font-size: 17px;
+		color: $main-color;
+	}
+
+
+}
+
+// map
+
+.map {
+	position: relative;
+	padding: 46px 0 22px 0;
+	min-height: 726px;
+	background: url('../images/backgrounds/map.jpg') center center/cover no-repeat;
+
+	.label {
+		@include labelWhite;
+		width: 80px;
+		padding: 6px 18px;
+	}
+
+	.title {
+		@include titleWhite;
+		margin-top: 26px;
+	}
+
+	.subtitle {
+		@include subtitleWhite;
+	}
+
+	.towns {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+		// margin: 0 auto;
+		height: 20px;
+		font-weight: 400;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: $main-color;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+// footer
+
+.footer {
+	position: relative;
+	padding: 0 22px;
+	width: 100%;
+	height: 185px;
+
+	.divider {
+		margin: 0 auto;
+		width: 300px;
+		height: 7px;
+		background-color: $main-color;
+		margin-top: 11px;
+	}
+
+	.links {
+		position: relative;
+		margin: 32px auto 0;
+		width: 350px;
+		height: 38px;
+
+		&_row1 {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			width: 350px;
+			height: 15px;
+
+			a {
+				font-weight: 300;
+				font-size: 15px;
+				text-transform: uppercase;
+				color: #070716;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&_row2 {
+			display: flex;
+			justify-content: space-between;
+			margin: 16px auto 0;
+			width: 350px;
+
+			a {
+				height: 12px;
+				font-weight: 300;
+				font-size: 11px;
+				text-transform: uppercase;
+				color: #999999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.language {
+		position: relative;
+		margin: 18px auto 0;
+		width: 52px;
+		height: 12px;
+
+		a {
+
+			display: block;
+			font-weight: 400;
+			font-size: 11px;
+			text-transform: uppercase;
+			color: $main-color;
+			text-decoration: none;
+
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+.social_wrapper {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: space-between;
+	width: 156px;
+	height: 35px;
+
+	.social_item {
+		width: 35px;
+		height: 35px;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		height: 35px;
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+}
+
+.stores_wrapper {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 21px;
+	display: flex;
+	justify-content: space-between;
+	width: 296px;
+
+	.apple {
+		width: 90px;
+	}
+
+	.windows {
+		width: 90px;
+	}
+
+	.google {
+		width: 90px;
+	}
+}
+
+.windows {
+	width: 90px;
+}
+
+.xs-visible {
+	display: none;
+}

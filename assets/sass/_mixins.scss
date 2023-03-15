@@ -1,0 +1,55 @@
+@mixin titleBlack {
+    margin: 0;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+@mixin titleWhite {
+    margin: 0;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@mixin subtitleBlack {
+    font-weight: 400;
+    font-size: 17px;
+    color: #222222;
+    text-align: center;
+}
+
+@mixin subtitleWhite {
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@mixin labelBlack {
+    padding: 6px 12px;
+    margin: 0 auto;
+    width: 115px;
+    height: 26px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@mixin labelWhite {
+    padding: 6px 12px;
+    margin: 0 auto;
+    width: 115px;
+    height: 26px;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #222222;
+}
